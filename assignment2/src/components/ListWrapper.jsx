@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import ListItem from './ListItem'
 import { v4 as uuidv4 } from "uuid"; // Importing uuid library
-import "../styles/ListWrapper.css"; // Importing CSS file for styling
+import "../styles/ListWrapper.css";
 import AddItem from './AddItem';
 
 export const ListWrapper = () => {
@@ -15,7 +15,6 @@ export const ListWrapper = () => {
                 ...items,
                 { id: uuidv4(), name: newItem, hasBought: false }
             ]
-            // items.push({ id: uuidv4(), name: newItem })
         )
 
     }
@@ -25,12 +24,11 @@ export const ListWrapper = () => {
         setItems(items.filter((item) => item.id !== id)); // Filtering out the items with the specified id
     }
 
-    // mark if the item has been bought
     const toggleItem = (id) => {
         console.log("Toggled")
         setItems(
             items.map((item) =>
-                item.id === id ? { ...item, hasBought: !item.hasBought } : item // Toggling completed status of the item wi
+                item.id === id ? { ...item, hasBought: !item.hasBought } : item
             )
         )
 

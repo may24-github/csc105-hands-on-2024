@@ -1,6 +1,6 @@
 import React from 'react'
-import {ListWrapper} from "./components/ListWrapper.jsx"
-import './App.css'; // Importing CSS file for styling
+import './App.css';
+import Calculator from './components/Calculator.jsx';
 
 
 function App() {
@@ -8,16 +8,12 @@ function App() {
     
     <div className = "Home">
         <div className = "container">
-
-            <h1> Shopping Cart </h1>
-            <ListWrapper />
-
+            <Calculator/>
         </div>
 
     </div>
   )
 }
-
 
 export default App
 
