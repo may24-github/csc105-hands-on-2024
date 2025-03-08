@@ -1,0 +1,48 @@
+.ListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ListItem .item-name {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.ListItem button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ListItem .edit-btn {
+    background-color: skyblue;
+    color: black;
+}
+
+.ListItem .edit-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.ListItem .delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.ListItem .save-btn {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Styles for bought items */
+.ListItem.bought .item-name {
+    text-decoration: line-through;
+    color: #6c757d;
+}
